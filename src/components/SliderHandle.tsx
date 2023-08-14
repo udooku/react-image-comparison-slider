@@ -1,6 +1,9 @@
-import React from "react";
+interface SliderHandleProps {
+  backgroundColor: string
+  color: string
+}
 
-function SliderHandle({ backgroundColor, color }) {
+export function SliderHandle({ backgroundColor, color }: SliderHandleProps) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +24,5 @@ function SliderHandle({ backgroundColor, color }) {
         d="M18.667 10.286v.285m0 0V21.43L23.733 16l-5.066-5.429z"
       ></path>
     </svg>
-  );
+  )
 }
-
-export default SliderHandle;
