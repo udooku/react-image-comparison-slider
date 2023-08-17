@@ -22,5 +22,11 @@
     "react-dom": "^18.2.0",
     "tsup": "^7.2.0",
     "typescript": "^5.1.6"
+  },
+  "dependencies": {
+    "styled-components": "^6.0.7"
+  },
+  "resolutions": {
+    "styled-components": "^5"
   }
 }

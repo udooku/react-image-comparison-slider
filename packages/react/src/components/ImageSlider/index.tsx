@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { MouseEvent, TouchEvent, useEffect, useRef, useState } from 'react'
 import { SliderHandle } from '../SliderHandle'
-import './styles.css'
+import { Wrapper } from './styles'
 
 export interface ImageSliderProps {
   image1: string
@@ -164,8 +164,7 @@ export function ImageSlider({
   }
 
   return (
-    <div
-      className="slider__wrapper"
+    <Wrapper
       ref={containerRef}
       style={{
         cursor: isMouseDown ? 'ew-resize' : 'default',
@@ -262,6 +261,6 @@ export function ImageSlider({
           </div>
         </>
       )}
-    </div>
+    </Wrapper>
   )
 }
