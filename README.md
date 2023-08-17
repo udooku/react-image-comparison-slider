@@ -1,6 +1,6 @@
 # Udooku DS
 
-- [ ] Image Comparision Slider
+- [x] Image Comparision Slider
 
 ## Setup caching for builds
 - Follow this guide: https://vercel.com/docs/concepts/monorepos/remote-caching#use-remote-caching-from-external-ci/cd
@@ -18,4 +18,4 @@
     - This command will update the version of the packages
     - Will also create a CHANGELOG.md file in package folder
 
-- npm run release
+- npm run release (after first release, use github push instead)

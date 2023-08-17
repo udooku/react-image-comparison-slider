@@ -33,7 +33,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-          TURBO_TOKEN: # fillup
+          TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }} # create VERCEL_TOKEN in github secrets
           TURBO_TEAM: #fillup
 
       - name: Send a Slack notification if a publish happens

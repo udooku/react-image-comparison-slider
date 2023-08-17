@@ -23,7 +23,7 @@ jobs:
 
     - run: npm run build
       env:
-        TURBO_TOKEN: # fillup
+        TURBO_TOKEN: ${{ secrets.VERCEL_TOKEN }} # create token in github secrets
         TURBO_TEAM: #fillup
 
     - name: Deploy storybook
