@@ -4,6 +4,7 @@
     "packages/*"
   ],
   "devDependencies": {
+    "@storybook/storybook-deployer": "^2.8.16",
     "turbo": "^1.10.12"
   },
   "scripts": {
