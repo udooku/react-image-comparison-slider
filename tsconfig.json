@@ -14,11 +14,13 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx",
-    "types": ["node"],
+    "types": ["vite/client", "node"],
     "paths": {
       "@/*": ["./src/*"]
-    }
+    },
+    "jsx": "preserve",
+    "baseUrl": "./",
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules"],
 }
