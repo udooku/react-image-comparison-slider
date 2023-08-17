@@ -1,14 +1,33 @@
 {
-  "name": "event-platform",
-  "private": true,
-  "version": "0.0.0",
+  "name": "@udooku/react-image-comparison-slider",
+  "version": "2.0.0",
+  "description": "A React component to compare images with a slider.",
+  "author": "Udooku",
+  "homepage": "https://github.com/udooku/react-image-comparison-slider",
+  "bugs": {
+    "url": "https://github.com/udooku/react-image-comparison-slider/issues"
+  },
+  "license": "MIT",
   "type": "module",
+  "exports": {
+    ".": {
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.cjs.js"
+    }
+  },
+  "main": "./dist/main.cjs.js",
+  "module": "./dist/main.es.js",
+  "typings": "./dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
+    "build:watch": "tsc && vite build --watch",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
@@ -22,5 +41,21 @@
     "eslint": "^8.34.0",
     "typescript": "^4.9.3",
     "vite": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udooku/react-image-comparison-slider.git"
+  },
+  "keywords": [
+    "react",
+    "image",
+    "image",
+    "comparison",
+    "slider",
+    "slider"
+  ],
+  "dependencies": {
+    "@rollup/plugin-typescript": "^11.1.2",
+    "rollup-plugin-typescript-paths": "^1.4.0"
   }
 }
