@@ -31,7 +31,7 @@ interface IProps {
 
 let animationLoop: number
 
-export function ImageSlider({
+export default function ImageSlider({
   image1,
   image2,
   alt1 = 'alt1',
