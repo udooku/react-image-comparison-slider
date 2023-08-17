@@ -9,7 +9,7 @@
 
 ## Publishing on NPM
 - Create organization in NPM
-- Run npm run changeset
+- npm run changeset
     - select packages that changed with space key and enter
     - bump versions
     - set summary of the changes
