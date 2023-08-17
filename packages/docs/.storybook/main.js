@@ -27,5 +27,12 @@ const config = {
   docs: {
     autodocs: "tag",
   },
+  viteFinal: (config, { configType }) => {
+    if (configType === 'PRODUCTION') {
+      config.base = 'react-image-comparison-slider/'
+    }
+
+    return config
+  }
 };
 export default config;
